@@ -1,0 +1,32 @@
+.center-grid {
+    display: grid;
+    place-items: center;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+form input{
+    margin-bottom: 20px;
+
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="file"]){
+    width: 300px;
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="file"]):hover {
+    border-color: #888;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="file"]):focus {
+    border-color: #555;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    outline: none; 
+}
